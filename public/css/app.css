@@ -1,152 +1,251 @@
-html {
-  font-family: "Roboto", sans-serif;
-}
-
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #e6e6e6;
-  background-color: rgb(33, 33, 33);
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.section-one {
+  height: 20px;
+  background-color: #0282F9;
 }
 
-a:hover {
-  color: #0091ff;
-}
-
-.containerNavBar {
-  width: 70%;
-  height: 100%;
+.container-h6-section {
+  display: flex;
+  gap: 0.6em;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.imgBox {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.container {
-  width: 70%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.containerGray {
-  width: 100%;
-  height: 1100px;
-  background-color: rgb(33, 33, 33);
-  padding-bottom: 150px;
-}
-
-.containerBlue {
-  width: 100%;
-  height: 15vh;
-  background-color: rgb(2, 130, 249);
-}
-
-.boxImgText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 20%;
-}
-
-.logo {
-  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-}
-
-.banner {
-  height: 40%;
-  width: 100%;
   color: white;
-  background-image: url(http://localhost:8000/img/jumbotron.jpg);
+  width: 900px;
+  padding-right: 0.6em;
 }
 
-.content {
-  position: relative;
-  width: 80%;
-  height: 60%;
+.text-section-one {
+  padding-top: 0.35em;
+  font-size: 0.6em;
+}
+
+.header-container {
+  display: flex;
   margin: auto;
-  display: flex;
-  justify-content: center;
+  width: 1100px;
+  justify-content: space-around;
   align-items: center;
-  color: white;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding-top: 50px;
+  text-align: center;
 }
 
-.series {
-  position: absolute;
-  top: 0;
-  margin-top: -25px;
-  left: 0;
-  height: 45px;
-  width: 190px;
-  background-color: rgb(2, 130, 249);
-  color: white;
-  font-size: 20px;
+.header-img {
+  padding: 1em 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 5%;
+}
+
+.header-nav {
+  height: 2rem;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  list-style: none;
+}
+
+.nav-a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 0.5rem;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+.nav-a:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.back-img {
+  height: 14em;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 270%;
+  background-image: url("/images/jumbotron.jpg");
 }
 
 .card {
-  text-align: center;
-  width: 200px;
-  height: 200px;
+  padding-top: 3em;
+  width: 11em;
+  height: 11em;
+  flex: 0 0 16%;
 }
 
-img {
-  width: 40%;
-  height: 40%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.ul-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
-.navbar {
-  width: 100%;
-  height: 12vh;
-  background-color: white;
-}
-
-img {
+.img-card {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-right: 3em;
+  padding-right: 1em;
 }
 
-ul {
+.h3-card {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding-top: 1em;
+  text-align: center;
+}
+
+main {
+  background-color: black;
+  padding-bottom: 0.5em;
+}
+
+.container-main {
+  height: 30em;
+  max-width: 1000px;
   display: flex;
-  list-style: none;
-  gap: 30px;
-  font-size: 15px;
+  color: white;
+  margin: 0 auto;
+  padding: 1em 0;
+  position: relative;
 }
 
-.imgBox {
-  margin-top: auto;
-  margin-bottom: auto;
+.title-img {
+  position: absolute;
+  top: -1em;
+  width: 160px;
+  background-color: #0282F9;
+  color: white;
+  white-space: nowrap;
+  padding: 0.5em 1em;
+  text-align: center;
 }
 
-.boxMenu {
+.container-button {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+button {
+  width: 200px;
+  background-color: #0282F9;
+  color: white;
+  white-space: nowrap;
+  padding: 0.5em 0.5em;
+  cursor: pointer;
+}
+
+.list-cs {
+  height: 6em;
+  background-color: #0282F9;
+  display: flex;
   align-items: center;
+}
+
+.ul-list {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2em;
+}
+
+.li-list {
+  display: flex;
+  align-items: center;
+  font-size: 0.6em;
+  white-space: nowrap;
+  margin-left: 4em;
+}
+
+.shop {
+  width: 24%;
+  padding-right: 0.5em;
+}
+
+.visa {
+  width: 14%;
+  padding-right: 0.5em;
+  margin-left: 3em;
+}
+
+.h3-list {
+  color: white;
+}
+
+footer {
+  height: 24em;
+  background-image: url("/images/footer-bg.jpg");
+}
+
+.foot-di {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.foot-ul-one {
+  color: white;
+  display: flex;
+  padding-right: 3em;
+  list-style: none;
+}
+
+.title-footer {
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  padding-right: 2em;
+}
+
+.foot-ul-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-li {
+  color: #959595;
+  list-style: none;
+  line-height: 1.3em;
+}
+
+.li-sites {
+  margin-left: 2em;
+}
+
+article {
+  background-color: #303030;
+}
+
+.container-article {
+  height: 4.6em;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-article {
+  border: 3px solid #0282F9;
+  background-color: #303030;
+  color: white;
+  white-space: nowrap;
+  padding: 0.5em 0.5em;
+}
+
+.social {
+  display: flex;
+  color: #0282F9;
+  justify-content: end;
+  gap: 1em;
+}
+
+.follow {
+  margin-top: 0.5em;
 }

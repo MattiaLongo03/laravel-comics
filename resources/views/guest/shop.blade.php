@@ -1,5 +1,5 @@
 @extends('guest.layouts.base')
 
 @section('content')
-<h1>sono la home page</h1>
+    <h1>sono lo shop</h1>
 @endsection
